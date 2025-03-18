@@ -190,12 +190,16 @@ nav ul li a:hover{
   color: var(--background-color);
 }
 
+.collapsable-menu ul{
+  display: none;
+}
+
 .main-text{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin: 0rem 8rem 0rem;
+  margin: 0rem 14rem 0rem;
 }
 
 .main-work-text{
@@ -335,6 +339,10 @@ img{
   text-decoration: none;
 }
 
+nav input[type='checkbox'], nav label {
+  display: none;
+}
+
 @media (max-width: 1500px){
   .main-grid{
     display: grid;
@@ -441,6 +449,38 @@ img{
     width: 300px;
 }
 
+.collapsable-menu ul{
+  display: block;
+  line-height: 2rem;
+  text-align: left;
+
+}
+
+.horizontal-menu ul{
+  display: none;
+}
+
+input[type='checkbox']:not(:checked)+.collapsable-menu ul{
+  display: none;
+}
+
+nav label span{
+  border: 2px solid var(--color-text);
+  margin: 4px;
+  display: block;
+}
+
+label{
+  width: 3rem;
+  margin-left: 8px;
+}
+nav label {
+  text-align: left;
+  display: block;
+  padding: 0.5em;
+  line-height: 1.6em;
+  align-self: center;
+}
 }
 
 @media (max-width:450px) {
@@ -526,4 +566,5 @@ img{
     flex-direction: row;
     align-items: center;
   }
+
 }
