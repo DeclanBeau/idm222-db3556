@@ -40,12 +40,12 @@
    ========================================= */
 
 :root {
-    --background-color: #fffff0;
-    --header-color: #98a886;
-    --accent-color: #5d503f;
-    --color-text: #22333b;
-    --color-text-accent: #5d503f;
-    --color-card: #7c8a6d;
+    --background-color: #ffffff;
+    --header-color: #bbcde5;
+    --accent-color: #1c5d99;
+    --color-text: #222222;
+    --color-text-accent: #1c5d99;
+    --color-card: #639fab;
 
     --font-main: "Rethink Sans", Arial, sans-serif;
     --font-bold: "Libre Franklin", Arial, sans-serif;
@@ -376,7 +376,6 @@ main ul:not(nav ul) li::before {
 
     background-color: var(--color-card);
 
-    border: 1px solid #6b775e;
     border-radius: var(--radius-lg);
 
     padding: var(--space-md);
@@ -508,6 +507,7 @@ footer {
 
 footer h4 {
     margin: 0 0 var(--space-sm);
+    color: var(--color-text);
 }
 
 .footer-text {
@@ -523,6 +523,7 @@ footer h4 {
 .footer-text p,
 .footer-text a {
     margin: 0;
+    color: var(--color-text);
 }
 
 
