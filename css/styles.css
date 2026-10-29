@@ -387,6 +387,12 @@ main ul:not(nav ul) li::before {
         box-shadow var(--transition);
 }
 
+.card-content{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
 .card-image img {
     width: 100%;
     aspect-ratio: 1 / 1;
