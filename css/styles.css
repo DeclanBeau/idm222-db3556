@@ -387,11 +387,6 @@ main ul:not(nav ul) li::before {
         box-shadow var(--transition);
 }
 
-.card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgb(34 51 59 / 15%);
-}
-
 .card-image img {
     width: 100%;
     aspect-ratio: 1 / 1;
