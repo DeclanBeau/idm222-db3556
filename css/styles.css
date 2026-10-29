@@ -399,6 +399,7 @@ main ul:not(nav ul) li::before {
 .card p {
     width: auto;
     max-width: none;
+    margin-bottom: var(--space-lg);
 
     color: var(--background-color);
 }
@@ -443,10 +444,14 @@ main ul:not(nav ul) li::before {
     margin-top: var(--space-md);
 }
 
+.button a {
+    color: inherit;
+    margin: 0;
+    text-decoration: none;
+}
+
 .button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
 
     min-width: 8rem;
     min-height: 3rem;
@@ -457,12 +462,15 @@ main ul:not(nav ul) li::before {
     border: 0;
     border-radius: var(--radius-md);
 
-    margin: var(--space-lg) auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--space-lg);
     padding: var(--space-sm) var(--space-lg);
 
     font-family: var(--font-main);
     font-size: 1rem;
     font-weight: 700;
+    text-decoration: none;
 
     cursor: pointer;
 
@@ -480,10 +488,9 @@ main ul:not(nav ul) li::before {
     transform: translateY(0);
 }
 
-.button a {
-    color: inherit;
-    margin: 0;
-    text-decoration: none;
+.button-container {
+    margin-top: auto;
+    text-align: center;
 }
 
 
